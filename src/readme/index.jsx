@@ -9,12 +9,13 @@ export default function Readme() {
   const { episodeNumber, title, description, chapters, tech, repoUrl } = data
   return (
     <div>
-      <h1>ReactU Episode #{episodeNumber}</h1>
-      <h2>{title}</h2>
+      <h1>
+        #{episodeNumber} - {title}
+      </h1>
       <p>{description}</p>
 
       <Tech items={tech} />
-      <Chapters branches={chapters} />
+      <Chapters chapters={chapters} />
       <Github repoUrl={repoUrl} />
     </div>
   )

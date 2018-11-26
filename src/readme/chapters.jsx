@@ -1,14 +1,23 @@
 import React from 'react'
 
-export default function Chapters({ branches }) {
+export default function Chapters({ chapters }) {
   return (
     <div>
       <h3>This episode has been divided into chapters using git-banches:</h3>
 
-      <ul>
-        {branches.map((branch) => (
-          <li key={branch}>{branch}</li>
-        ))}
+      <ul
+        style={{
+          listStyleType: 'none',
+        }}
+      >
+        {chapters.map((chapter) => {
+          const { branch, timestamp, link } = chapter
+          return (
+            <li key={branch}>
+              - {timestamp} [<a href={link}>{branch}]</a>
+            </li>
+          )
+        })}
       </ul>
     </div>
   )

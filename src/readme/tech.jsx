@@ -8,9 +8,13 @@ export default function Tech({ items }) {
         feature/app:
       </h3>
 
-      <ul>
+      <ul
+        style={{
+          listStyleType: 'none',
+        }}
+      >
         {items.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>- {item}</li>
         ))}
       </ul>
     </div>
