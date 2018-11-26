@@ -14,12 +14,16 @@ export default function Chapters({ chapters }) {
           const { branch, timestamp } = chapter
           return (
             <li key={branch}>
-              - {timestamp} [
-              <a
-                href={`https://github.com/react-u/030-setting-up-eslint-for-react-in-vscode/tree/${branch}`}
-              >
-                {branch}]
-              </a>
+              - {timestamp}{' '}
+              {branch
+                ? [
+                  <a
+                    href={`https://github.com/react-u/030-setting-up-eslint-for-react-in-vscode/tree/${branch}`}
+                  >
+                    {branch}]
+                  </a>,
+                ]
+                : null}
             </li>
           )
         })}

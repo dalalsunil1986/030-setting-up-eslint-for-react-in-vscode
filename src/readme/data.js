@@ -6,21 +6,14 @@ export default {
   ],
   tech: ['React', 'ESLint', 'Visual Studio Code'],
   chapters: [{
-      timestamp: '00:00',
-      branch: '01-start-here',
-    },
-    {
-      timestamp: '00:00',
-      branch: '02-installing-dependencies',
-    },
-    {
-      timestamp: '00:00',
-      branch: '03-the-eslint-config',
-    },
-    {
-      timestamp: '00:00',
-      branch: '04-vs-code-setup',
-    },
+    timestamp: '00:20',
+  },
+  {
+    timestamp: '01:03',
+  },
+  {
+    timestamp: '03:04',
+  }
   ],
   repoUrl: '030-setting-up-eslint-for-react-in-vscode'
 }
