@@ -10,7 +10,7 @@ export default function Readme() {
   return (
     <div>
       <h1>
-        #{episodeNumber} - {title}
+        {title} - Episode #{episodeNumber}
       </h1>
       <p>{description}</p>
 

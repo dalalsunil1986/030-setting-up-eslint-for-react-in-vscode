@@ -8,23 +8,19 @@ export default {
   chapters: [{
       timestamp: '00:00',
       branch: '01-start-here',
-      link: ''
     },
     {
       timestamp: '00:00',
       branch: '02-installing-dependencies',
-      link: ''
     },
     {
       timestamp: '00:00',
       branch: '03-the-eslint-config',
-      link: ''
     },
     {
       timestamp: '00:00',
       branch: '04-vs-code-setup',
-      link: ''
     },
   ],
-  repoUrl: 'https://github.com/react-u/030-setting-up-eslint-for-react-in-vscode'
+  repoUrl: '030-setting-up-eslint-for-react-in-vscode'
 }

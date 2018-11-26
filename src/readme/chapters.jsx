@@ -11,10 +11,15 @@ export default function Chapters({ chapters }) {
         }}
       >
         {chapters.map((chapter) => {
-          const { branch, timestamp, link } = chapter
+          const { branch, timestamp } = chapter
           return (
             <li key={branch}>
-              - {timestamp} [<a href={link}>{branch}]</a>
+              - {timestamp} [
+              <a
+                href={`https://github.com/react-u/030-setting-up-eslint-for-react-in-vscode/tree/${branch}`}
+              >
+                {branch}]
+              </a>
             </li>
           )
         })}
