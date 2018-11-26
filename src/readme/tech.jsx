@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Tech() {
+export default function Tech({ items }) {
   return (
     <div>
       <h3>
@@ -9,16 +9,9 @@ export default function Tech() {
       </h3>
 
       <ul>
-        <li>React (of course)</li>
-        <li>
-          Hooks
-          <ul>
-            <li>state</li>
-            <li>effects</li>
-          </ul>
-        </li>
-        <li>setTimeout</li>
-        <li>CSS keyframes</li>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </div>
   )
